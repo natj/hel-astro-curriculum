@@ -1,5 +1,5 @@
 {
-  "name": "@aravindballa/notes",
+  "name": "Helsinki Astro Curriculum",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
   },
   "keywords": [],
-  "author": "Aravind Balla <bsaaravind@gmail.com> (https://aravindballa.com)",
+  "author": "Joonas Nättilä",
   "license": "MIT",
   "dependencies": {
     "@tippyjs/react": "^4.0.2",
