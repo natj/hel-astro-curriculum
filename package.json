@@ -1,16 +1,16 @@
 {
-  "name": "Helsinki Astro Curriculum",
+  "name": "Helsinki-Astro-Curriculum",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":  "gatsby build",
-    "start":  "gatsby develop",
-    "clean":  "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "keywords": [],
-  "author": "Joonas Nättilä",
+  "author": "natj",
   "license": "MIT",
   "dependencies": {
     "@tippyjs/react": "^4.0.2",
