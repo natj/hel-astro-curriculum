@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/hel-astro-curriculum",
   siteMetadata: {
     title: `Helsinki Astrophysics Curriculum`,
   },
@@ -20,3 +21,7 @@ module.exports = {
     },
   ],
 };
+
+
+module.exports = {
+}

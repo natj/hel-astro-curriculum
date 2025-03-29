@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
-    "clean": "gatsby clean"
+    "build":  "gatsby build",
+    "start":  "gatsby develop",
+    "clean":  "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
   },
   "keywords": [],
   "author": "Aravind Balla <bsaaravind@gmail.com> (https://aravindballa.com)",
