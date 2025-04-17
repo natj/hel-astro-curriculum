@@ -54,6 +54,7 @@ These courses are strongly recommended as they are prerequisites to many astroph
 - FYS2054 [[Tähtien rakenne ja kehitys]] 5 op
 - FYS2043 [[Johdatus avaruusplasmafysiikkaan]] 5 op
 
+
 ---
 
 ## Muut pakolliset kurssit 
@@ -61,6 +62,5 @@ These courses are strongly recommended as they are prerequisites to many astroph
 - [[Viestintä- ja kieliopinnot]] 10 op
 - [[Akateemiset taidot]] 5 op 
 - [[Työelämätaidot]] 10 op
-
 
 ---
