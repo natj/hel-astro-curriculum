@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: "/hel-astro-curriculum",
   siteMetadata: {
     title: `Helsinki Astrophysics Curriculum`,
   },
+  pathPrefix: "",
   plugins: [
     {
       resolve: `gatsby-theme-andy`,

@@ -18,7 +18,7 @@ const BrainNote = ({ note }) => {
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
         className="no-underline hover:text-gray-700"
-        to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
+        to={reference.slug === 'about' ? `/hel-astro/curriculum/about` : `/hel-astro-curriculum/${reference.slug}`} 
         key={reference.slug}
       >
         <div className="py-2">
@@ -39,6 +39,7 @@ const BrainNote = ({ note }) => {
     }
   }
 
+  // popup window when hovering mouse over the link
   const popups = {};
   if (note.outboundReferenceNotes) {
     note.outboundReferenceNotes
