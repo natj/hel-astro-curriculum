@@ -18,7 +18,7 @@ const BrainNote = ({ note }) => {
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
         className="no-underline hover:text-gray-700"
-        to={reference.slug === 'about' ? `/hel-astro/curriculum/about` : `/hel-astro-curriculum/${reference.slug}`} 
+        to={reference.slug === 'about' ? `curriculum/about` : `${reference.slug}`} 
         key={reference.slug}
       >
         <div className="py-2">
