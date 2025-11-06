@@ -14,11 +14,11 @@ const BrainNote = ({ note }) => {
   let references = [];
   let referenceBlock;
   if (note.inboundReferenceNotes != null) {
-    const RefLink = width < 768 ? Link : LinkToStacked;
+    const RefLink = width < NOTE_WIDTH ? Link : LinkToStacked;
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
         className="no-underline hover:text-gray-700"
-        to={reference.slug === 'about' ? `curriculum/about` : `${reference.slug}`} 
+        to={reference.slug === 'about' ? `about` : `${reference.slug}`} 
         key={reference.slug}
       >
         <div className="py-2">

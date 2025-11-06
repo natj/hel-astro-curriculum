@@ -27,7 +27,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       animation="shift-away"
       maxWidth="none"
       content={
-        <div className="py-1 px-2 bg-white rounded text-sm text-blue-600 shadow">{href}</div>
+        <div className="py-1 px-2 bg-blue rounded text-sm text-blue-600 shadow">{href}</div>
       }
     >
       <a className="" {...restProps} href={href} />
