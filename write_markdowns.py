@@ -64,12 +64,6 @@ def create_markdown(course):
 
     md = f"""---
 title: {course['name']} ({course['code']})
-period: {periods}
-years: {years}
-theory: {t}
-methods: {m}
-observations: {o}
-phenomena: {p}
 ---
 
 Course covering {course['eng_name']}.
