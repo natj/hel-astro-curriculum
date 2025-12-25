@@ -54,7 +54,7 @@ astro_courses = [
             "Astrobiology",
             "Exoplanets"
         ],
-        "prereqs": ["FYS2041 Tähtieteen perusteet I"]
+        "prereqs": ["Tähtitieteen perusteet I"]
     },
     {
         "code": "FYS2044",
@@ -84,7 +84,7 @@ astro_courses = [
             "Astrometry",
             "Modern telescope technology"
         ],
-        "prereqs": ["Basics of astronomy I"]
+        "prereqs": ["Tähtitieteen perusteet I"]
     },
     {
         "code": "FYS2045",
@@ -150,7 +150,7 @@ astro_courses = [
             "Planetary nebulae",
             "Supernova"
         ],
-        "prereqs": ["Basic astronomy I-II", "Basics of thermophysics"]
+        "prereqs": ["Tähtitieteen perusteet I", "Tähtitieteen perusteet II", "Termofysiikan perusteet"]
     },
     {
         "code": "FYS2046",
@@ -180,7 +180,7 @@ astro_courses = [
             "Thermodynamic equilibrium",
             "Stellar atmospheric model calculations"
         ],
-        "prereqs": ["Basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
+        "prereqs": ["Basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
     },
     {
         "code": "FYS2047",
@@ -207,7 +207,7 @@ astro_courses = [
             "Neutral hydrogen in interstellar space",
             "Continuum emission and absorption in interstellar space"
         ],
-        "prereqs": ["FYS2046 Astrofysiikan peruskurssi I", "basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
+        "prereqs": ["Astrofysiikan peruskurssi I", "basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
     },
     {
         "code": "FYS2043",
@@ -267,7 +267,7 @@ astro_courses = [
             "Hamilton’s equations of motion",
             "Canonical transformations"
         ],
-        "prereqs": ["Basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills", "basic skills in numerics", "beneficial: FYMM IIb"]
+        "prereqs": ["Basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)", "basic skills in numerics (unresolved)", "Fysiikan matemaattiset menetelmät IIb"]
     },
     {
         "code": "FYS2055",
@@ -293,7 +293,7 @@ astro_courses = [
             "Disturbing function",
             "Orbit computation"
         ],
-        "prereqs": ["FYS2027 Mekaniikka", "basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills", "basic skills in scientific programming", "beneficial: FYMM IIa"]
+        "prereqs": ["Mekaniikka", "basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)", "basic skills in scientific programming (unresolved)", "Fysiikan matemaattiset menetelmät IIa"]
     },
     {
         "code": "FYS2051",
@@ -326,7 +326,7 @@ astro_courses = [
             "Presenting scientific information in written and oral forms, reference critique",
             "Numerical implementation of integrated brightness for discretised spheroids"
         ],
-        "prereqs": ["Basics of astronomy (TäPe) I-II", "Numerical methods (TiLa) I", "MApu I-III"]
+        "prereqs": ["Tähtitieteen perusteet I", "Tähtitieteen perusteet II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
     },
     {
         "code": "FYS2052",
@@ -352,7 +352,7 @@ astro_courses = [
             "Galaxy clusters and the large-scale structure of the Universe. The early Universe, inflation theory and the formation of structure.",
             "Galaxy formation and evolution, a theoretical framework."
         ],
-        "prereqs": ["Basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
+        "prereqs": ["Basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
     },
     {
         "code": "FYS2053",
@@ -379,7 +379,7 @@ astro_courses = [
             "The Milky Way rotation curve and spiral structure. The mass density in the vicinity of the Sun",
             "Formation and evolution of the Milky Way"
         ],
-        "prereqs": ["Basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
+        "prereqs": ["Basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
     },
     {
         "code": "BSPH2009",
@@ -431,7 +431,7 @@ astro_courses = [
             "Massive galaxies at high redshifts – a challenge for structure formation?",
             "Dark Energy and the Hubble tension"
         ],
-        "prereqs": ["Bachelor studies in astronomy or equivalent"]
+        "prereqs": ["Bachelor studies in astronomy or equivalent (unresolved)"]
     },
     {
         "code": "PAP303",
@@ -460,7 +460,7 @@ astro_courses = [
             "Markov chain Monte Carlo",
             "Artificial neural networks"
         ],
-        "prereqs": ["Numerical methods (TiLa) I", "MApu I-III"]
+        "prereqs": ["Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
     },
     {
         "code": "PAP304",
@@ -751,7 +751,7 @@ astro_courses = [
             "Transneptunian objects and Oort-cloud objects",
             "Centaurs and comets"
         ],
-        "prereqs": ["Bachelor courses in astronomy with emphasis on FYS2027, FYS2055, FYS2051"]
+        "prereqs": ["Mekaniikka", "Taivaanmekaniikka", "Aurinkokunnan fysiikka"]
     },
     {
         "code": "PAP312",
@@ -777,7 +777,7 @@ astro_courses = [
             "Time Series Analysis, Simulation of astrophysical data, Linear and non-linear models",
             "Multiperiodicity, DFT pre-whitening, De-trending, Bootstrap, Fisher-test, Nested models"
         ],
-        "prereqs": ["Tila I or equivalent Python programming skills"]
+        "prereqs": ["Tieteellinen laskenta I", "equivalent Python programming skills (unresolved)"]
     },
     {
         "code": "PAP313",
@@ -804,7 +804,7 @@ astro_courses = [
             "Chromospherically active stars: Differential rotation, active longitudes, activity cycles",
             "Binary star O-C data: Light time effect, Applegate effect, Apsidal motion, Mass transfer"
         ],
-        "prereqs": ["Tila I or equivalent Python programming skills"]
+        "prereqs": ["Tieteellinen laskenta I", "equivalent Python programming skills (unresolved)"]
     },
     {
         "code": "PAP351",
@@ -830,7 +830,7 @@ astro_courses = [
             "Observing solar and stellar magnetic activity",
             "Inversion methods (Doppler imaging, photometric inversion)"
         ],
-        "prereqs": ["Bachelor courses of astronomy", "Basic physics courses", "MApu I-III", "Numerical methods (TiLa I)", "Plasma physics (recommended)", "Statistical inverse methods (rec.)", "Space and Astrophysical Plasma Turbulence (useful)"]
+        "prereqs": ["Bachelor courses of astronomy (unresolved)", "Basic physics courses (unresolved)", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III", "Tieteellinen laskenta I", "Plasma Physics", "Statistical Inverse Methods", "Space and Astrophysical Plasma Turbulence"]
     },
     {
         "code": "PAP314",
@@ -859,7 +859,7 @@ astro_courses = [
             "Radar scattering",
             "Applications"
         ],
-        "prereqs": ["Electrodynamics", "Numerical methods (TiLa) I", "MApu I-III"]
+        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
     },
     {
         "code": "PAP315",
@@ -889,7 +889,7 @@ astro_courses = [
             "Radar scattering",
             "Geometric optics for close-packed media"
         ],
-        "prereqs": ["Electrodynamics", "Numerical methods (TiLa) I", "MApu I-III"]
+        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
     },
     {
         "code": "PAP316",
@@ -918,7 +918,7 @@ astro_courses = [
             "Interstellar dust",
             "Exoplanets"
         ],
-        "prereqs": ["Electrodynamics", "Numerical methods (TiLa) I", "MApu I-III"]
+        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
     },
     {
         "code": "PAP317",
@@ -951,7 +951,7 @@ astro_courses = [
             "Kinetic theory and relaxation processes",
             "Mergers of galaxies and galaxy formation"
         ],
-        "prereqs": ["Bachelor studies in astronomy or equivalent", "Galaxies and cosmology", "Mechanics and Celestial mechanics"]
+        "prereqs": ["Bachelor studies in astronomy or equivalent (unresolved)", "Galaksit ja kosmologia", "Mekaniikka", "Taivaanmekaniikka"]
     },
     {
         "code": "PAP318",
@@ -983,7 +983,7 @@ astro_courses = [
             "Formation of elliptical galaxies",
             "Formation of active galaxies and the physics of supermassive black holes"
         ],
-        "prereqs": ["Bachelor studies in astronomy or equivalent", "Galaxies and cosmology", "Milky Way structure", "Basic courses in astrophysics"]
+        "prereqs": ["Bachelor studies in astronomy or equivalent (unresolved)", "Galaksit ja kosmologia", "Linnunradan rakenne", "Astrofysiikan peruskurssi I"]
     },
     {
         "code": "PAP319",
@@ -1541,7 +1541,7 @@ additional_courses = [
             "Magnetic fields in matter: Magnetization, auxiliary field H, linear and non-linear media",
             "Electrodynamics: Electromotive force, induction, Maxwell’s equations"
         ],
-        "prereqs": ["Teoreettisen fysiikan taidot"]
+        "prereqs": ["Teoreettisen fysiikan taidot (unresolved)"]
     },
     {
         "code": "ElectroII",
