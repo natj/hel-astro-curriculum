@@ -57,7 +57,9 @@ def create_markdown(course):
 
     # 4. Format Lists (Topics & Prereqs)
     topics_list = "\n".join([f"- {t}" for t in course['topics']]) if course['topics'] else "- No content listed"
-    prereqs_list = "\n".join([f"- {p}" for p in course['prereqs']]) if course['prereqs'] else "- None listed"
+
+    prereqs_list = "\n".join([f"- [[{p}]]" for p in course['prereqs']]) if course['prereqs'] else "- None listed"
+    prereqs_list_other = "\n".join([f"- {p}" for p in course['prereqs_other']]) if course['prereqs_other'] else ""
     
     # 5. Period Display
     period_display = ", ".join(map(str, periods)) if periods else "Not specified"
@@ -66,7 +68,7 @@ def create_markdown(course):
 title: {course['name']} ({course['code']})
 ---
 
-Course covering {course['eng_name']}.
+{course['description']}
 
 - **Period**: {period_display}
 - **Content**: {format_content_string(course)}
@@ -82,8 +84,12 @@ Course covering {course['eng_name']}.
 ## Pre-requisites
 
 {prereqs_list}
+{prereqs_list_other}
 """
     return md
+
+
+
 
 # --- Main Loop ---
 all_courses = astro_courses + additional_courses
@@ -98,4 +104,3 @@ for course in all_courses:
         f.write(create_markdown(course))
 
 print(f"Successfully created files in '{output_dir}/'.")
-
