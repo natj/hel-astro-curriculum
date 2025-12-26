@@ -3,6 +3,8 @@ astro_courses = [
         "code": "FYS2041",
         "name": "Tähtitieteen perusteet I",
         "eng_name": "Basics of Astronomy I",
+        "op": 5,
+        "description": "The course gives an overview of the study and research of astrophysics and space physics, as well as the most important concepts in the field.",
         "period": [3],
         "year": [1, 2],
         "content_lectures": 14,
@@ -21,12 +23,15 @@ astro_courses = [
             "Celestial mechanics (Kepler’s laws, orbital elements, two-body systems)",
             "Solar system physics (objects, albedos, temperature estimates, exoplanet detection)"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2042",
         "name": "Tähtitieteen perusteet II",
         "eng_name": "Basics of Astronomy II",
+        "op": 5,
+        "description": "The course deepens the understanding of astronomical phenomena, such as stellar structure, the Milky Way, and cosmology.",
         "period": [4],
         "year": [1, 2],
         "content_lectures": 12,
@@ -54,12 +59,15 @@ astro_courses = [
             "Astrobiology",
             "Exoplanets"
         ],
-        "prereqs": ["Tähtitieteen perusteet I"]
+        "prereqs": ["Tähtitieteen perusteet I"],
+        "prereqs_other": []
     },
     {
         "code": "FYS2044",
         "name": "Havaitsevan tähtitieteen peruskurssi I",
         "eng_name": "Observational Astronomy I",
+        "op": 5,
+        "description": "The course introduces optical observation instruments, observational methods, and data processing.",
         "period": [1, 2],
         "year": [1, 2],
         "content_lectures": 14,
@@ -84,12 +92,15 @@ astro_courses = [
             "Astrometry",
             "Modern telescope technology"
         ],
-        "prereqs": ["Tähtitieteen perusteet I"]
+        "prereqs": ["Tähtitieteen perusteet I"],
+        "prereqs_other": []
     },
     {
         "code": "FYS2045",
         "name": "Havaitsevan tähtitieteen peruskurssi II",
         "eng_name": "Observational Astronomy II",
+        "op": 5,
+        "description": "The course covers observational methods and physics of high-energy astrophysics and radio astronomy.",
         "period": [],
         "year": [],
         "content_lectures": 18,
@@ -115,12 +126,15 @@ astro_courses = [
             "Continuum observations",
             "Radio interferometry"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2054",
         "name": "Tähtien rakenne ja kehitys",
         "eng_name": "Stellar Structure and Evolution",
+        "op": 5,
+        "description": "The course provides basic knowledge of stellar physics, structure, energy production, and evolution.",
         "period": [3, 4],
         "year": [2, 3],
         "content_lectures": 13,
@@ -150,12 +164,15 @@ astro_courses = [
             "Planetary nebulae",
             "Supernova"
         ],
-        "prereqs": ["Tähtitieteen perusteet I", "Tähtitieteen perusteet II", "Termofysiikan perusteet"]
+        "prereqs": ["Tähtitieteen perusteet I", "Tähtitieteen perusteet II", "Termofysiikan perusteet"],
+        "prereqs_other": []
     },
     {
         "code": "FYS2046",
         "name": "Astrofysiikan peruskurssi I",
         "eng_name": "Basics of Astrophysics I",
+        "op": 5,
+        "description": "The course covers radiative processes, stellar atmosphere physics, and the passage of radiation through matter.",
         "period": [3],
         "year": [2, 3],
         "content_lectures": 14,
@@ -180,12 +197,15 @@ astro_courses = [
             "Thermodynamic equilibrium",
             "Stellar atmospheric model calculations"
         ],
-        "prereqs": ["Basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
+        "prereqs": [],
+        "prereqs_other": ["Basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
     },
     {
         "code": "FYS2047",
         "name": "Astrofysiikan peruskurssi II",
         "eng_name": "Basics of Astrophysics II",
+        "op": 5,
+        "description": "The course deepens understanding of interstellar matter, the formation of spectral lines, and the interaction of radiation with matter.",
         "period": [4],
         "year": [2, 3],
         "content_lectures": 12,
@@ -207,12 +227,15 @@ astro_courses = [
             "Neutral hydrogen in interstellar space",
             "Continuum emission and absorption in interstellar space"
         ],
-        "prereqs": ["Astrofysiikan peruskurssi I", "basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
+        "prereqs": ["Astrofysiikan peruskurssi I"],
+        "prereqs_other": ["basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
     },
     {
         "code": "FYS2043",
         "name": "Johdatus avaruusplasmafysiikkaan",
         "eng_name": "Introduction to Space Plasma Physics",
+        "op": 5,
+        "description": "The course provides basics of plasma physics and its applications in space physics and astrophysics.",
         "period": [1],
         "year": [2, 3],
         "content_lectures": 14,
@@ -233,12 +256,15 @@ astro_courses = [
             "Fusion on Earth",
             "Plasma and materials"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2027",
         "name": "Mekaniikka",
         "eng_name": "Mechanics",
+        "op": 5,
+        "description": "The course covers classical mechanics, Lagrangian and Hamiltonian formalisms, and their applications.",
         "period": [1],
         "year": [2, 3],
         "content_lectures": 14,
@@ -267,12 +293,15 @@ astro_courses = [
             "Hamilton’s equations of motion",
             "Canonical transformations"
         ],
-        "prereqs": ["Basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)", "basic skills in numerics (unresolved)", "Fysiikan matemaattiset menetelmät IIb"]
+        "prereqs": ["Fysiikan matemaattiset menetelmät IIb"],
+        "prereqs_other": ["Basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills", "basic skills in numerics"]
     },
     {
         "code": "FYS2055",
         "name": "Taivaanmekaniikka",
         "eng_name": "Celestial Mechanics",
+        "op": 5,
+        "description": "The course delves into the movements of celestial bodies, orbital mechanics, and perturbation theory.",
         "period": [2],
         "year": [2, 3],
         "content_lectures": 14,
@@ -293,12 +322,15 @@ astro_courses = [
             "Disturbing function",
             "Orbit computation"
         ],
-        "prereqs": ["Mekaniikka", "basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)", "basic skills in scientific programming (unresolved)", "Fysiikan matemaattiset menetelmät IIa"]
+        "prereqs": ["Mekaniikka", "Fysiikan matemaattiset menetelmät IIa"],
+        "prereqs_other": ["basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills", "basic skills in scientific programming"]
     },
     {
         "code": "FYS2051",
         "name": "Aurinkokunnan fysiikka",
         "eng_name": "Solar System Physics",
+        "op": 5,
+        "description": "The course covers the physics, formation, and observation of solar system bodies.",
         "period": [3, 4],
         "year": [2, 3],
         "content_lectures": 12,
@@ -326,12 +358,15 @@ astro_courses = [
             "Presenting scientific information in written and oral forms, reference critique",
             "Numerical implementation of integrated brightness for discretised spheroids"
         ],
-        "prereqs": ["Tähtitieteen perusteet I", "Tähtitieteen perusteet II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
+        "prereqs": ["Tähtitieteen perusteet I", "Tähtitieteen perusteet II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"],
+        "prereqs_other": []
     },
     {
         "code": "FYS2052",
         "name": "Galaksit ja kosmologia",
         "eng_name": "Galaxies and Cosmology",
+        "op": 5,
+        "description": "The course gives an overview of the structure, dynamics, and formation of galaxies, as well as the basics of cosmology.",
         "period": [1, 2],
         "year": [2, 3],
         "content_lectures": 14,
@@ -352,12 +387,15 @@ astro_courses = [
             "Galaxy clusters and the large-scale structure of the Universe. The early Universe, inflation theory and the formation of structure.",
             "Galaxy formation and evolution, a theoretical framework."
         ],
-        "prereqs": ["Basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
+        "prereqs": [],
+        "prereqs_other": ["Basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
     },
     {
         "code": "FYS2053",
         "name": "Linnunradan rakenne",
         "eng_name": "Structure of the Milky Way",
+        "op": 5,
+        "description": "The course examines the structure, kinematics, and dynamics of the Milky Way, as well as the distribution of interstellar matter.",
         "period": [1, 2],
         "year": [2, 3],
         "content_lectures": 14,
@@ -379,12 +417,15 @@ astro_courses = [
             "The Milky Way rotation curve and spiral structure. The mass density in the vicinity of the Sun",
             "Formation and evolution of the Milky Way"
         ],
-        "prereqs": ["Basic courses in astronomy (unresolved)", "basic courses in physics (unresolved)", "basic studies in theoretical physics or corresponding mathematical skills (unresolved)"]
+        "prereqs": [],
+        "prereqs_other": ["Basic courses in astronomy", "basic courses in physics", "basic studies in theoretical physics or corresponding mathematical skills"]
     },
     {
         "code": "BSPH2009",
         "name": "Basics of Astronomy I",
         "eng_name": "Basics of Astronomy I",
+        "op": 5,
+        "description": "General overview of astronomy basics (English Bachelor's programme equivalent).",
         "period": [],
         "year": [],
         "content_lectures": 26,
@@ -406,12 +447,15 @@ astro_courses = [
             "Compact objects",
             "SN nucleosynthesis and chemical enrichment models"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP302",
         "name": "Open Problems in Modern Astrophysics",
         "eng_name": "Open Problems in Modern Astrophysics",
+        "op": 5,
+        "description": "The course discusses open questions in modern astrophysics, such as exoplanets and galaxy formation.",
         "period": [1, 2],
         "year": [4],
         "content_lectures": 14,
@@ -431,12 +475,15 @@ astro_courses = [
             "Massive galaxies at high redshifts – a challenge for structure formation?",
             "Dark Energy and the Hubble tension"
         ],
-        "prereqs": ["Bachelor studies in astronomy or equivalent (unresolved)"]
+        "prereqs": [],
+        "prereqs_other": ["Bachelor studies in astronomy or equivalent"]
     },
     {
         "code": "PAP303",
         "name": "Statistical Inverse Methods",
         "eng_name": "Statistical Inverse Methods",
+        "op": 5,
+        "description": "The course offers the basics and applications of statistical inverse methods.",
         "period": [3, 4],
         "year": [4],
         "content_lectures": 12,
@@ -460,12 +507,15 @@ astro_courses = [
             "Markov chain Monte Carlo",
             "Artificial neural networks"
         ],
-        "prereqs": ["Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
+        "prereqs": ["Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"],
+        "prereqs_other": []
     },
     {
         "code": "PAP304",
         "name": "Plasma Physics",
         "eng_name": "Plasma Physics",
+        "op": 5,
+        "description": "The course covers basic properties of plasma, particle motion, and magnetohydrodynamics.",
         "period": [1],
         "year": [4, 5],
         "content_lectures": 13,
@@ -484,12 +534,15 @@ astro_courses = [
             "MHD waves",
             "Cold plasma waves"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP323",
         "name": "Advanced Space Plasma Physics",
         "eng_name": "Advanced Space Plasma Physics",
+        "op": 5,
+        "description": "Advanced course on phenomena and theories of space plasma physics.",
         "period": [3, 4],
         "year": [5],
         "content_lectures": 24,
@@ -513,12 +566,15 @@ astro_courses = [
             "Radiation and scattering",
             "Transport (Fokker-Planck theory)"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP324",
         "name": "Numerical Space Physics",
         "eng_name": "Numerical Space Physics",
+        "op": 5,
+        "description": "The course introduces numerical methods and simulations in space physics.",
         "period": [4],
         "year": [5],
         "content_lectures": 12,
@@ -534,12 +590,15 @@ astro_courses = [
             "Running simulations and analysing the output",
             "Principles of numerical methods (focus on MHD)"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP321",
         "name": "Solar Physics",
         "eng_name": "Solar Physics",
+        "op": 5,
+        "description": "The course deals with the physics, structure, and activity of the Sun.",
         "period": [3],
         "year": [5],
         "content_lectures": 12,
@@ -560,12 +619,15 @@ astro_courses = [
             "Solar wind",
             "Solar eruptions"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP305",
         "name": "Space Applications of Plasma Physics",
         "eng_name": "Space Applications of Plasma Physics",
+        "op": 5,
+        "description": "The course examines applications of plasma physics in the space environment, such as solar wind and magnetosphere.",
         "period": [2],
         "year": [4, 5],
         "content_lectures": 12,
@@ -584,12 +646,15 @@ astro_courses = [
             "Space weather",
             "Key data sets in space physics"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP354",
         "name": "Space and Astrophysical Plasma Turbulence",
         "eng_name": "Space and Astrophysical Plasma Turbulence",
+        "op": 5,
+        "description": "The course covers the theory and phenomena of plasma turbulence in space and astrophysics.",
         "period": [2],
         "year": [4, 5],
         "content_lectures": 12,
@@ -608,12 +673,15 @@ astro_courses = [
             "Intermittency",
             "Fermi-II particle acceleration mechanism"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP306",
         "name": "Advanced Course in Observational Astronomy I",
         "eng_name": "Advanced Course in Observational Astronomy I",
+        "op": 5,
+        "description": "Advanced course on observational astronomy methods and instruments.",
         "period": [1],
         "year": [4, 5],
         "content_lectures": 12,
@@ -638,12 +706,15 @@ astro_courses = [
             "NOTCam and its commands",
             "Preparation for observations at Turku"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP307",
         "name": "Advanced Course in Observational Astronomy II",
         "eng_name": "Advanced Course in Observational Astronomy II",
+        "op": 5,
+        "description": "Continuation course deepening skills in observational astronomy.",
         "period": [4],
         "year": [4, 5],
         "content_lectures": 24,
@@ -666,12 +737,15 @@ astro_courses = [
             "Data visualization tools",
             "ESO data archive"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP308",
         "name": "Special Course in Observational Astronomy",
         "eng_name": "Special Course in Observational Astronomy",
+        "op": 5,
+        "description": "Special course focusing on a specific theme or method in observational astronomy.",
         "period": [],
         "year": [4, 5],
         "content_lectures": 24,
@@ -697,12 +771,15 @@ astro_courses = [
             "Calibrations during the night and data retrieval",
             "NOT data processing"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP309",
         "name": "Interstellar Matter",
         "eng_name": "Interstellar Matter",
+        "op": 5,
+        "description": "The course covers the physics, chemistry, and observation of interstellar matter.",
         "period": [2],
         "year": [4, 5],
         "content_lectures": 12,
@@ -720,12 +797,15 @@ astro_courses = [
             "High-mass star formation",
             "Astrochemistry"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP311",
         "name": "Small Bodies in the Solar System",
         "eng_name": "Small Bodies in the Solar System",
+        "op": 5,
+        "description": "The course delves into small solar system bodies, such as asteroids and comets.",
         "period": [1, 2],
         "year": [4, 5],
         "content_lectures": 14,
@@ -751,12 +831,15 @@ astro_courses = [
             "Transneptunian objects and Oort-cloud objects",
             "Centaurs and comets"
         ],
-        "prereqs": ["Mekaniikka", "Taivaanmekaniikka", "Aurinkokunnan fysiikka"]
+        "prereqs": ["Mekaniikka", "Taivaanmekaniikka", "Aurinkokunnan fysiikka"],
+        "prereqs_other": []
     },
     {
         "code": "PAP312",
         "name": "Time Series Analysis in Astronomy",
         "eng_name": "Time Series Analysis in Astronomy",
+        "op": 5,
+        "description": "The course teaches time series analysis methods and their application to astronomical data.",
         "period": [1],
         "year": [5],
         "content_lectures": 14,
@@ -777,12 +860,15 @@ astro_courses = [
             "Time Series Analysis, Simulation of astrophysical data, Linear and non-linear models",
             "Multiperiodicity, DFT pre-whitening, De-trending, Bootstrap, Fisher-test, Nested models"
         ],
-        "prereqs": ["Tieteellinen laskenta I", "equivalent Python programming skills (unresolved)"]
+        "prereqs": ["Tieteellinen laskenta I"],
+        "prereqs_other": ["equivalent Python programming skills"]
     },
     {
         "code": "PAP313",
         "name": "Variable Stars",
         "eng_name": "Variable Stars",
+        "op": 5,
+        "description": "The course deals with the physics and observation of variable stars.",
         "period": [1, 2],
         "year": [5],
         "content_lectures": 14,
@@ -804,12 +890,15 @@ astro_courses = [
             "Chromospherically active stars: Differential rotation, active longitudes, activity cycles",
             "Binary star O-C data: Light time effect, Applegate effect, Apsidal motion, Mass transfer"
         ],
-        "prereqs": ["Tieteellinen laskenta I", "equivalent Python programming skills (unresolved)"]
+        "prereqs": ["Tieteellinen laskenta I"],
+        "prereqs_other": ["equivalent Python programming skills"]
     },
     {
         "code": "PAP351",
         "name": "Stellar magnetic activity",
         "eng_name": "Stellar magnetic activity",
+        "op": 5,
+        "description": "The course examines stellar magnetic activity, dynamo theory, and observations.",
         "period": [3, 4],
         "year": [4, 5],
         "content_lectures": 14,
@@ -830,12 +919,15 @@ astro_courses = [
             "Observing solar and stellar magnetic activity",
             "Inversion methods (Doppler imaging, photometric inversion)"
         ],
-        "prereqs": ["Bachelor courses of astronomy (unresolved)", "Basic physics courses (unresolved)", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III", "Tieteellinen laskenta I", "Plasma Physics", "Statistical Inverse Methods", "Space and Astrophysical Plasma Turbulence"]
+        "prereqs": ["Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III", "Tieteellinen laskenta I", "Plasma Physics", "Statistical Inverse Methods", "Space and Astrophysical Plasma Turbulence"],
+        "prereqs_other": ["Bachelor courses of astronomy", "Basic physics courses"]
     },
     {
         "code": "PAP314",
         "name": "Introduction to light scattering",
         "eng_name": "Introduction to light scattering",
+        "op": 5,
+        "description": "The course introduces the basics and applications of light scattering.",
         "period": [4],
         "year": [3, 4],
         "content_lectures": 14,
@@ -859,12 +951,15 @@ astro_courses = [
             "Radar scattering",
             "Applications"
         ],
-        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
+        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"],
+        "prereqs_other": []
     },
     {
         "code": "PAP315",
         "name": "Computational light scattering",
         "eng_name": "Computational light scattering",
+        "op": 5,
+        "description": "The course covers computational methods for light scattering.",
         "period": [1],
         "year": [4, 5],
         "content_lectures": 14,
@@ -889,12 +984,15 @@ astro_courses = [
             "Radar scattering",
             "Geometric optics for close-packed media"
         ],
-        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
+        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"],
+        "prereqs_other": []
     },
     {
         "code": "PAP316",
         "name": "Astrophysical light scattering problems",
         "eng_name": "Astrophysical light scattering problems",
+        "op": 5,
+        "description": "The course applies light scattering theory to astrophysical problems.",
         "period": [4],
         "year": [3, 4],
         "content_lectures": 14,
@@ -918,12 +1016,15 @@ astro_courses = [
             "Interstellar dust",
             "Exoplanets"
         ],
-        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"]
+        "prereqs": ["Electrodynamics I", "Electrodynamics II", "Tieteellinen laskenta I", "Matemaattiset apuneuvot I", "Matemaattiset apuneuvot II", "Matemaattiset apuneuvot III"],
+        "prereqs_other": []
     },
     {
         "code": "PAP317",
         "name": "Galactic dynamics",
         "eng_name": "Galactic dynamics",
+        "op": 5,
+        "description": "The course covers galactic dynamics, potentials, and orbits.",
         "period": [3, 4],
         "year": [4, 5],
         "content_lectures": 14,
@@ -951,12 +1052,15 @@ astro_courses = [
             "Kinetic theory and relaxation processes",
             "Mergers of galaxies and galaxy formation"
         ],
-        "prereqs": ["Bachelor studies in astronomy or equivalent (unresolved)", "Galaksit ja kosmologia", "Mekaniikka", "Taivaanmekaniikka"]
+        "prereqs": ["Galaksit ja kosmologia", "Mekaniikka", "Taivaanmekaniikka"],
+        "prereqs_other": ["Bachelor studies in astronomy or equivalent"]
     },
     {
         "code": "PAP318",
         "name": "Galaxy formation and evolution",
         "eng_name": "Galaxy formation and evolution",
+        "op": 5,
+        "description": "The course examines galaxy formation and evolution in a cosmological context.",
         "period": [1, 2],
         "year": [4, 5],
         "content_lectures": 14,
@@ -983,12 +1087,15 @@ astro_courses = [
             "Formation of elliptical galaxies",
             "Formation of active galaxies and the physics of supermassive black holes"
         ],
-        "prereqs": ["Bachelor studies in astronomy or equivalent (unresolved)", "Galaksit ja kosmologia", "Linnunradan rakenne", "Astrofysiikan peruskurssi I"]
+        "prereqs": ["Galaksit ja kosmologia", "Linnunradan rakenne", "Astrofysiikan peruskurssi I"],
+        "prereqs_other": ["Bachelor studies in astronomy or equivalent"]
     },
     {
         "code": "PAP319",
         "name": "High Energy Astrophysics",
         "eng_name": "High Energy Astrophysics",
+        "op": 5,
+        "description": "The course deals with high-energy astrophysical phenomena and observations.",
         "period": [],
         "year": [],
         "content_lectures": 12,
@@ -1014,12 +1121,15 @@ astro_courses = [
             "Quantum electrodynamic processes at high energies",
             "X-IFU/Athena forecasts"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "PAP320",
         "name": "Radiative Transfer",
         "eng_name": "Radiative Transfer",
+        "op": 5,
+        "description": "The course deals with the transfer of radiation and its interaction with matter.",
         "period": [1],
         "year": [4, 5],
         "content_lectures": 12,
@@ -1044,7 +1154,8 @@ astro_courses = [
             "Model discretisations (spatial, angular, and frequency grids)",
             "Parallel radiative transfer"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     }
 ]
 
@@ -1054,6 +1165,8 @@ additional_courses = [
         "code": "MATR322",
         "name": "Numerical Methods in Scientific Computing",
         "eng_name": "Numerical Methods in Scientific Computing",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1065,17 +1178,20 @@ additional_courses = [
         "themes_phenomena": None,
         "teachers": [],
         "topics": [],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1010",
         "name": "Matemaattiset apuneuvot I",
         "eng_name": "Mathematical Methods I",
+        "op": 5,
+        "description": "The course deals with vector calculus, power series, and differential and integral calculus.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1087,17 +1203,20 @@ additional_courses = [
             "Differential calculus",
             "Integral calculus"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1011",
         "name": "Matemaattiset apuneuvot II",
         "eng_name": "Mathematical Methods II",
+        "op": 5,
+        "description": "The course covers the basics of complex numbers, differential equations, and linear algebra.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1108,17 +1227,20 @@ additional_courses = [
             "Basics of ordinary differential equations (integrating factor, trial function, separability)",
             "Basics of linear algebra"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1012",
         "name": "Matemaattiset apuneuvot III",
         "eng_name": "Mathematical Methods III",
+        "op": 5,
+        "description": "The course deals with differential and integral calculus of vector functions.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1129,17 +1251,20 @@ additional_courses = [
             "Integral calculus of vector functions: line, surface and volume integrals",
             "Gauss's and Stokes's theorems"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2010",
         "name": "Fysiikan matemaattiset menetelmät Ia",
         "eng_name": "Mathematical Methods for Physicists Ia",
+        "op": 5,
+        "description": "The course deepens the theory of complex numbers and functions, as well as series expansions.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1151,17 +1276,20 @@ additional_courses = [
             "Series expansions of complex functions (Taylor and Laurent series)",
             "Residue calculus"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2011",
         "name": "Fysiikan matemaattiset menetelmät Ib",
         "eng_name": "Mathematical Methods for Physicists Ib",
+        "op": 5,
+        "description": "The course covers analytic continuation, special functions, and integral transforms.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1174,17 +1302,20 @@ additional_courses = [
             "Fourier and Laplace transforms",
             "Dirac delta"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2012",
         "name": "Fysiikan matemaattiset menetelmät IIa",
         "eng_name": "Mathematical Methods for Physicists IIa",
+        "op": 5,
+        "description": "The course focuses on partial differential equations and second-order differential equations.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1195,17 +1326,20 @@ additional_courses = [
             "Second order ordinary differential equations (ODE)",
             "Special functions"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2013",
         "name": "Fysiikan matemaattiset menetelmät IIb",
         "eng_name": "Mathematical Methods for Physicists IIb",
+        "op": 5,
+        "description": "The course covers variational calculus, functional derivatives, and operator theory.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1220,12 +1354,15 @@ additional_courses = [
             "Spectral theory (if time permits)",
             "Probability calculus (very little)"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "TCM304",
         "name": "Fysiikan matemaattiset menetelmät IIIa",
         "eng_name": "Mathematical Methods for Physicists IIIa",
+        "op": None,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1241,12 +1378,15 @@ additional_courses = [
             "Representation theory",
             "Topology"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "TCM305",
         "name": "Fysiikan matemaattiset menetelmät IIIb",
         "eng_name": "Mathematical Methods for Physicists IIIb",
+        "op": None,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1262,17 +1402,20 @@ additional_courses = [
             "Riemannian geometry: Geodesics, Killing vectors",
             "Semi-simple Lie algebras and their unitary representations"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1013",
         "name": "Tieteellinen laskenta I",
         "eng_name": "Scientific Computing I",
+        "op": 5,
+        "description": "The course teaches the basics of programming with Python and the fundamentals of scientific computing.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1288,17 +1431,20 @@ additional_courses = [
             "Basics of using databases for scientific search",
             "Basics of creating a scientific document (LaTeX/Writing)"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
-        "code": "N/A",
+        "code": "FYS2085",
         "name": "Tieteellinen laskenta II",
         "eng_name": "Scientific Computing II",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1307,17 +1453,20 @@ additional_courses = [
         "topics": [
             "Fortran programming language"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1014",
         "name": "Havaintojen tilastollinen käsittely",
         "eng_name": "Statistical Analysis of Observations",
+        "op": 5,
+        "description": "The course covers statistical processing of observations, error estimation, and distributions.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1332,12 +1481,15 @@ additional_courses = [
             "Basics of time series analysis",
             "Basics of chaos theory"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "MOOC1",
         "name": "Ohjelmoinnin perusteet (MOOC)",
         "eng_name": "Basics of Programming (MOOC)",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1352,12 +1504,15 @@ additional_courses = [
             "Python",
             "Similar to TiLA1 but more thorough"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "MOOC2",
         "name": "Ohjelmoinnin jatkokurssi (MOOC)",
         "eng_name": "Advanced Programming (MOOC)",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1373,12 +1528,15 @@ additional_courses = [
             "Object-oriented programming",
             "Classes"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "N/A",
         "name": "Introduction to Machine Learning",
         "eng_name": "Introduction to Machine Learning",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1390,12 +1548,15 @@ additional_courses = [
         "themes_phenomena": None,
         "teachers": [],
         "topics": [],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "N/A",
         "name": "Advanced Machine Learning",
         "eng_name": "Advanced Machine Learning",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1407,17 +1568,20 @@ additional_courses = [
         "themes_phenomena": None,
         "teachers": [],
         "topics": [],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1001",
         "name": "Vuorovaikutukset ja kappaleet",
         "eng_name": "Interactions and Bodies",
+        "op": 5,
+        "description": "The course gives a good overview of the fundamental forces of nature, conservation laws, and their application.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op; Matter & Interactions ch 1-8"],
+        "content_other": ["Matter & Interactions ch 1-8"],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1431,17 +1595,20 @@ additional_courses = [
             "Internal energy",
             "Quantization of energy"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1002",
         "name": "Vuorovaikutukset ja aine",
         "eng_name": "Interactions and Matter",
+        "op": 5,
+        "description": "The course deepens the understanding of properties of matter and interactions from the perspective of thermodynamics and statistical physics.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op; Matter & Interactions ch 9-12 + gas supplement"],
+        "content_other": ["Matter & Interactions ch 9-12 + gas supplement"],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1454,17 +1621,20 @@ additional_courses = [
             "Entropy",
             "Gases and heat engines"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS2027",
         "name": "Mekaniikka",
         "eng_name": "Mechanics",
+        "op": 5,
+        "description": "The course covers classical mechanics, Lagrangian and Hamiltonian formalisms, and their applications.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op"],
+        "content_other": [],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1476,17 +1646,20 @@ additional_courses = [
             "Rotation (Euler angles)",
             "Two-body interaction"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1003",
         "name": "Sähkömagnetismi",
         "eng_name": "Electromagnetism",
+        "op": 5,
+        "description": "The course covers the basics of electric and magnetic fields, circuits, and Maxwell's equations.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op; Matter & Interactions ch 13-20"],
+        "content_other": ["Matter & Interactions ch 13-20"],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1497,17 +1670,20 @@ additional_courses = [
             "Magnetic field, force",
             "Circuits"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
         "code": "FYS1004",
         "name": "Säteilykentät ja fotonit",
         "eng_name": "Radiation Fields and Photons",
+        "op": 5,
+        "description": "The student can apply Maxwell's equations to describe time-dependent electrical and magnetic phenomena.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
         "content_exercises": None,
-        "content_other": ["5 op; Matter & Interactions ch 21-23"],
+        "content_other": ["Matter & Interactions ch 21-23"],
         "themes_theory": None,
         "themes_methods": None,
         "themes_observations": None,
@@ -1517,12 +1693,15 @@ additional_courses = [
             "Maxwell's equations",
             "Electromagnetic radiation"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
-        "code": "ElectroI",
-        "name": "Electrodynamics I",
+        "code": "FYS2016",
+        "name": "Elektrodynamiikka I",
         "eng_name": "Electrodynamics I",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1541,12 +1720,15 @@ additional_courses = [
             "Magnetic fields in matter: Magnetization, auxiliary field H, linear and non-linear media",
             "Electrodynamics: Electromotive force, induction, Maxwell’s equations"
         ],
-        "prereqs": ["Teoreettisen fysiikan taidot (unresolved)"]
+        "prereqs": [],
+        "prereqs_other": ["Teoreettisen fysiikan taidot (unresolved)"]
     },
     {
-        "code": "ElectroII",
-        "name": "Electrodynamics II",
+        "code": "FYS2017",
+        "name": "Elektrodynamiikka II",
         "eng_name": "Electrodynamics II",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1564,12 +1746,15 @@ additional_courses = [
             "Radiation: Electric and magnetic dipole radiation, arbitrary sources, radiation reaction",
             "Electrodynamics and relativity: Special relativity, field tensor, Lorentz transformation"
         ],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
-        "code": "N/A",
+        "code": "FYS2001",
         "name": "Termofysiikan perusteet",
         "eng_name": "Basics of Thermophysics",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1581,12 +1766,15 @@ additional_courses = [
         "themes_phenomena": None,
         "teachers": [],
         "topics": [],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     },
     {
-        "code": "N/A",
+        "code": "FYS2002",
         "name": "Termodynaamiset potentiaalit",
         "eng_name": "Thermodynamic Potentials",
+        "op": 5,
+        "description": "Course description not available in the curriculum.",
         "period": [None],
         "year": [None],
         "content_lectures": None,
@@ -1598,6 +1786,7 @@ additional_courses = [
         "themes_phenomena": None,
         "teachers": [],
         "topics": [],
-        "prereqs": []
+        "prereqs": [],
+        "prereqs_other": []
     }
 ]
