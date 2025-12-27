@@ -2775,7 +2775,7 @@ additional_courses = [
     },
     {
         "code": "KK-ENG501",
-        "name": "Academic Writing 1: Principles and Practice",
+        "name": "Academic Writing 1",
         "eng_name": "Academic Writing 1: Principles and Practice",
         "level": "MSc",
         "frequency": "Annual",
@@ -2803,7 +2803,7 @@ additional_courses = [
     },
     {
         "code": "KK-ENG502",
-        "name": "Academic Writing 2: Process and Feedback",
+        "name": "Academic Writing 2",
         "eng_name": "Academic Writing 2: Process and Feedback",
         "level": "MSc",
         "frequency": "Annual",
