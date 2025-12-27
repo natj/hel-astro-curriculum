@@ -53,12 +53,12 @@ def create_markdown(course):
     if course['teachers']:
         teachers_display = ", ".join([f"[[{t}]]" for t in course['teachers']])
     else:
-        teachers_display = "None listed"
+        teachers_display = ""
 
     # 4. Format Lists (Topics & Prereqs)
-    topics_list = "\n".join([f"- {t}" for t in course['topics']]) if course['topics'] else "- No content listed"
+    topics_list = "\n".join([f"- {t}" for t in course['topics']]) if course['topics']  else "- No content listed"
 
-    prereqs_list = "\n".join([f"- [[{p}]]" for p in course['prereqs']]) if course['prereqs'] else "- None listed"
+    prereqs_list = "\n".join([f"- [[{p}]]" for p in course['prereqs']]) if course['prereqs'] else ""
     prereqs_list_other = "\n".join([f"- {p}" for p in course['prereqs_other']]) if course['prereqs_other'] else ""
     
     # 5. Period Display
@@ -89,8 +89,23 @@ title: {course['name']} ({course['code']})
     return md
 
 
+def create_bio(teacer):
+
+    md = f"""---
+title: {teacer['name']} 
+---
+
+{teacer['description']}
+
+- email: {teacer['email']}
+- website: {teacer['webpage']}
+
+"""
+    return md
 
 
+
+#--------------------------------------------------
 # --- Main Loop ---
 all_courses = astro_courses + additional_courses
 
@@ -104,3 +119,16 @@ for course in all_courses:
         f.write(create_markdown(course))
 
 print(f"Successfully created files in '{output_dir}/'.")
+
+
+#--------------------------------------------------
+from teacherinfo import teachers
+
+print(f"Processing {len(teachers)} teachers...")
+
+for teacher in teachers:
+    filename = slugify(teacher['name']) + ".md"
+    filepath = os.path.join(output_dir, filename)
+
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(create_bio(teacher))
