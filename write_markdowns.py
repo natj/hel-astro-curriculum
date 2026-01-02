@@ -4,7 +4,7 @@ import unicodedata
 from courseinfo import astro_courses, additional_courses
 
 
-output_dir = "courses"
+output_dir = "content"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
