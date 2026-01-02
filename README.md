@@ -3,6 +3,15 @@
 Welcome to an experimental University of Helsinki astrophysics course curriculum rendered as a digital garden of notes.
 
 
+## Course data 
+
+- `courseinfo.py` stores the course information as python dictionary entries
+- `teacherinfo.py` stores information about teachers as python dictionary entries
+- `write_markdowns.py` reads these datasets and generates the markdown files into `content/`
+
+If you want to change data, modify `courseinfo.py` and `teacherinfo.py` and rerun `python3 write_markdowns.py`. Then re-generate the page.
+
+
 ## Generate page locally
 
 Install prerequisites
