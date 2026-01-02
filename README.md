@@ -14,18 +14,18 @@ If you want to change data, modify `courseinfo.py` and `teacherinfo.py` and reru
 
 ## Generate page locally
 
-Install prerequisites
+The page runs with `gatsby` and uses https://github.com/natj/gatsby-stacked-notes as a theme.
 
+To develop the page locally, first install the prerequisites (done only once):
 ```bash
 npm install
 ```
-
-Generate page
-
+Build the html-version of the page
 ```bash
 npm run build
 ```
-Outputu will be located at `public/` and can be copied to a html-serving disk space.
+
+The output will be located at `public/` and can be copied to a html-serving disk space.
 
 Optionally, serve the page (for local debugging):
 ```bash
