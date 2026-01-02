@@ -1,0 +1,36 @@
+{
+  "name": "modern-gatsby-andy-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build --prefix-paths",
+    "serve": "gatsby serve --prefix-paths",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "clsx": "^2.1.1",
+    "gatsby": "^5.15.0",
+    "gatsby-plugin-layout": "^4.15.0",
+    "gatsby-plugin-mdx": "^5.15.0",
+    "gatsby-source-filesystem": "^5.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remark-wiki-link": "^2.0.1",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "gatsby-plugin-postcss": "^6.15.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
+  }
+}

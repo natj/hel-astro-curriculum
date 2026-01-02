@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* LIGHT MODE (Default) */
+  --color-text: #333333;
+  --color-text-light: #718096;
+  --color-background: #ffffff;
+  --color-primary: #3182ce;
+  --color-gray: #dadada;
+  --color-accent: #fafafc;
+  --color-layout-bg: #f0f0f0; /* The scroll track background */
+  
+  --spine-width: 40px;
+  --note-width: 576px;
+}
+
+/* DARK MODE OVERRIDES */
+[data-theme="dark"] {
+  --color-text: #e2e8f0;       /* Light gray text */
+  --color-text-light: #a0aec0; /* Dimmer text */
+  --color-background: #1a202c; /* Dark gray/blue (Tailwind gray-900) */
+  --color-primary: #63b3ed;    /* Lighter blue for readability */
+  --color-gray: #2d3748;       /* Darker borders */
+  --color-accent: #2d3748;     /* Dark accent for footer */
+  --color-layout-bg: #111827;  /* Very dark background for layout */
+}
+
+body {
+  height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-layout-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- COMPONENT: Layout Wrapper --- */
+.garden-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--color-layout-bg); 
+  align-items: stretch;
+  transition: background-color 0.3s ease;
+}
+
+
+/* --- COMPONENT: Note Card --- */
+.note-card {
+  flex-shrink: 0;
+  background-color: var(--color-background);
+  height: 100%;
+  border-right: 1px solid var(--color-gray);
+  position: sticky;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow-y: auto;
+  width: var(--note-width);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.125);
+}
+
+.note-card::-webkit-scrollbar {
+  display: none;
+}
+.note-card {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* --- COMPONENT: Spine --- */
+.note-spine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--spine-width);
+  z-index: 20;
+  cursor: pointer;
+  display: none; 
+}
+
+.note-spine.visible {
+  display: block;
+}
+
+.spine-text {
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  white-space: nowrap;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-gray);
+  text-decoration: none;
+  width: 400px;
+  text-align: left;
+}
+
+.spine-text:hover {
+  color: var(--color-primary);
+}
+
+/* --- COMPONENT: Content Area --- */
+.note-content {
+  padding: 3rem 2.5rem;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+/* --- COMPONENT: Typography (Prose) --- */
+.prose h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  line-height: 1.125;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.prose a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+/* --- RESTORED LIST STYLES HERE --- */
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose li {
+  margin-bottom: 0; 
+  line-height: 1.5; 
+}
+
+/* --- COMPONENT: Backlinks Footer --- */
+.references-block {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: var(--color-accent);
+  border-radius: 8px;
+  color: var(--color-text-light);
+}
+
+.references-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  color: var(--color-text-light);
+}
+
+.reference-link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.reference-link:hover .ref-title {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.ref-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.ref-excerpt {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.note-header-area {
+  /*
+   * margin-bottom: 2rem;
+   * padding-bottom: 1rem;
+   * border-bottom: 1px solid var(--color-gray);
+  */
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+/* Make lists in the header horizontal/compact if you use them */
+.note-header-area ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.note-header-area p {
+  margin-bottom: 0;
+}
+
+.note-footer-area {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+/* Remove default prose spacing for these areas so they look compact */
+.note-header-area a, .note-footer-area a {
+  color: var(--color-text-light);
+  text-decoration: underline;
+}
+
+.note-header-area a:hover, .note-footer-area a:hover {
+  color: var(--color-primary);
+}
